@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rabbit Game</title>
+    <link rel="stylesheet" href="GameDisplay.css">
+</head>
+<body onload="DisplayMainMenu()">
+    <!------------------------------------------------- DISPLAY ALL ---------------------------------------------------->
+    <canvas class="LevelCanvas" id="LevelCanvas" width="1200" height="600"></canvas>
+    <canvas class="CanvasMenu" id="CanvasMenu" width="1200" height="600"></canvas>
+    
+    <!-------------------------------------------------- MAIN MENU ----------------------------------------------------->
+    <h1 class="TheTittleGame" id="TheTittleGame">Rabbit Game</h1>
+    <button class="PlayButtonMenu" id="PlayButtonMenu">Play Game</button>
+    <button class="AboutButtonMenu" id="AboutButtonMenu">About</button>
+    
+    <!-------------------------------------------------- PLAY MENU ----------------------------------------------------->
+    <button class="GameLevelOne" id="GameLevelOne" onclick="ButtonLevelOne()">Level 1</button>
+    <button class="GameLevelTwo" id="GameLevelTwo" onclick="ButtonLevelTwo()">Level 2</button>
+    <button class="GameLevelThree" id="GameLevelThree" onclick="ButtonLevelThree()">Enddles Level</button>
+
+
+    <!----------------------------------------- Display Condition Game ------------------------------------------------->
+    <h1 class="TheTittleGameOver" id="TheTittleGameOver">Game Over!</h1>
+    <button class="NextLevelButton" id="NextLevelButton">Next Level</button>
+    <button class="RestartButton" id="RestartButton">Restart</button>
+    <button class="MainMenuButton" id="MainMenuButton">Main Menu</button>
+    <h2 class="TittleScore" id="TittleScore">Your Score is : </h2>
+    <h2 class="ScoreGame" id="ScoreGame">0</h2>
+
+    <button class="ButtonPaused" id="ButtonPaused">Pause</button>
+
+    <h1 class="LevelRunning" id="LevelRunning">Level 1</h1>
+    <h1 class="DisplayScore" id="DisplayScore">Score: <span class="Score" id="Score">0</span></h1>
+
+    <!-------------------------------------------------- ABOUT MENU --------------------------------------------------------->
+    <h1 class="TittleAbout" id="TittleAbout">About Game</h1>
+    <h2 class="AboutGame1" id="AboutGame1">
+        This game was inspired<br>
+        by a Rabbit Jumping over the fence<br>
+    </h2>
+    <h2 class="AboutGame2" id="AboutGame2">
+        How To Play Game?<br>
+        To Play the Game you need to Press Spacebar<br>
+        on your keyboard to make The Rabbit Jump<br>
+
+        In Enddles Mode Level not End <br>
+        <br>
+        Game Over?<br>
+        If Your Rabbit hit the Obstacle(Fence)<br>
+        Then the Game will be Over
+    </h2>
+    <h2 class="AboutGame3" id="AboutGame3">
+        How To Finish Level?<br>
+        To finish Level 1 you Need to reach Score 75<br>
+        After Level 1 Finish Level 2 will Be Unlocked<br>
+        <br>
+        To finish Level 2 you Need to reach Score 75<br>
+        The different is speed game Level 2 is increased <br>
+        <br>
+        This Game is just for entertainment
+    </h2>
+    <button class="HomeButton" id="HomeButton">Back</button>
+    <script src="GameDisplay.js"></script>
+    <script src="Game.js"></script>
+</body>
+</html>
